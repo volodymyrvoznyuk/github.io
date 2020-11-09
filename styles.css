@@ -35,14 +35,14 @@ h2 {
 ul {
     list-style: none;  
     font-size: clamp(.5em, 1.2em, 2em);
-   
+    line-height: 1.5em;
     padding-left: 0;
 }
 
 li {
     margin-bottom: .5em;
     font-size: clamp(.2em, 1em, 2em);
-    
+    margin-right:   10px;
 }
 
 
@@ -58,7 +58,7 @@ li {
    display: grid;
    column-gap: 50px;
    grid-template-columns: min-content 1fr;
-   background-color: cornsilk;
+  
  
   
 }
