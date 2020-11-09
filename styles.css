@@ -1,7 +1,35 @@
 body {
-    margin: 0;
+    margin: 0px 100px 0px 100px;
+    padding: 10px; 
+    font-family: 'Roboto';
+}
+
+h1 {
+ font-family: 'Roboto Black';
+ font-size: 3em;
+}
+
+h2 {
+   
 }
 
 ul {
-    list-style: none;
+    list-style: none;  
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr   ;
+  
+}
+
+.personalia, .profielschets, .vaardigheden, .werkervaring, .opleiding {
+    display: flex;
+    
+    align-items: baseline;
+    background-color: burlywood;
 }
