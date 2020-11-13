@@ -1,50 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap');
+
 body {
     margin: 0 10px 0 10px;
-    font-family: 'Roboto';
-    background-image:  linear-gradient(#444df725 2.7px, transparent 2.7px), linear-gradient(to right, #444df725 2.7px, #e5e5f752 2.7px);
-background-size: 65px 65px;
-z-index: -1;
+    font-family: 'Pragati', sans-serif;
+
+    background-color: whitesmoke;
 }
 
 @media only screen and (min-width: 600px) {
 body {
     margin: 0px 100px 0px 100px;
     padding: 10px; 
-    font-family: 'Roboto';
-
-background-image:  linear-gradient(#444df725 2.7px, transparent 2.7px), linear-gradient(to right, #444df725 2.7px, #e5e5f752 2.7px);
-background-size: 65px 65px;
-z-index: -1;
 }
 }
 
 h1 {
- font-family: 'Roboto Black';
- font-size: clamp(2em, 3.5em, 4em);
+    margin: 0;
+    font-family: 'Roboto Black', sans-serif;
+    line-height: 1;
+    font-size: 64px;
+ 
+  
 }
 
 h2 {
- font-size: clamp(1em, 2em, 3em);   
- font-family: 'Roboto Black'; 
- background-color: white;
- 
- 
+    margin: 0;
+    font-family: 'Roboto Black', sans-serif; 
+    font-size: 42px;
+    background-color: white;
 }
-
 
 ul {
     list-style: none;  
-    font-size: clamp(.5em, 1.2em, 2em);
-    line-height: 1.5em;
+    font-size: clamp(.5em, 1.5em, 2em);
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    word-spacing:;
     padding-left: 0;
 }
 
 li {
     margin-bottom: .5em;
-    font-size: clamp(.2em, 1em, 2em);
+    
     margin-right:   10px;
 }
 
+li .email{
+    display: flex;
+    background-color: wheat;
+}
+
+.header {
+    margin: 50px 0px;
+}
 
 .container {
     display: flex;
@@ -57,7 +68,7 @@ li {
 .container {
    display: grid;
    column-gap: 50px;
-   grid-template-columns: min-content 1fr;
+   grid-template-columns: 65ch minmax(85ch, 1fr) minmax(65ch, 1fr);
   
  
   
@@ -78,5 +89,6 @@ li {
 
 .opleiding .flex-wrapper {
     display: flex;
+    flex-direction: column;
     
 }
