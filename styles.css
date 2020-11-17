@@ -2,34 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap');
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
 html {
     scroll-behavior: smooth;
 }
 body {
     margin: 0 10px 0 10px;
-    min-height: 500vh;
-    background-color: rgb(139, 201, 228);
+    min-height: 300vh;
+    background-color: rgb(231, 243, 248);
     animation: body 1s linear;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
   }
   @keyframes body {
     to {
-      background-color: rgb(42, 85, 160);
+      background-color: rgb(141, 165, 206);
     }
-  }
-
-  
-
-
-:root * {
-    /* Pause the animation */
-    animation-play-state: paused;
-    /* Bind the animation to scroll */
-    animation-delay: calc(var(--scroll) * -1s);
-    /* These last 2 properites clean up overshoot weirdness */
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
   }
 
 
@@ -38,8 +35,7 @@ h1 {
     font-family: 'Roboto Black', sans-serif;
     line-height: 1;
     font-size: 64px;
- 
-  
+    
 }
 
 h2 {
@@ -61,10 +57,6 @@ li {
     margin-right:   10px;
 }
 
-li .email{
-    display: flex;
-    background-color: wheat;
-}
 
 .header {
     margin: 50px 0px;
@@ -73,18 +65,14 @@ li .email{
 .container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
 
 @media only screen and (min-width: 850px) {
 .container {
-   display: grid;
-   column-gap: 50px;
-   grid-template-columns: 65ch minmax(85ch, 1fr) minmax(65ch, 1fr);
-  
- 
-  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-column-gap: 25px; 
 }
 }
 
@@ -92,16 +80,23 @@ li .email{
     display: flex;
 }
 
-
-.vaardigheden, .werkervaring, .opleiding {
-  
-    
-
-    
-}
-
 .opleiding .flex-wrapper {
     display: flex;
     flex-direction: column;
     
 }
+
+.email {
+    text-decoration: none;
+ 
+}
+
+:root * {
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
