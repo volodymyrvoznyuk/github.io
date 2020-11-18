@@ -16,16 +16,18 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0 10px 0 10px;
     min-height: 300vh;
-    background-color: rgb(231, 243, 248);
+    background-color: #DDDDDD;
     animation: body 1s linear;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #23473b;
   }
   @keyframes body {
     to {
-      background-color: rgb(141, 165, 206);
+      background-color: #a8a4a4;
     }
   }
 
@@ -40,9 +42,13 @@ h1 {
 
 h2 {
     margin: 0;
-    font-family: 'Roboto Black', sans-serif; 
-    font-size: 42px;
-    background-color: white;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: thistle;
+}
+
+h3 {
+    font-weight: 500;
 }
 
 ul {
@@ -53,13 +59,20 @@ ul {
 
 li {
     margin-bottom: .5em;
-    
     margin-right:   10px;
 }
 
 
+
 .header {
-    margin: 50px 0px;
+    height: 70vh;
+    margin-top: 10vh;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
 }
 
 .container {
@@ -71,14 +84,27 @@ li {
 @media only screen and (min-width: 850px) {
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-column-gap: 25px; 
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-column-gap: 5em; 
 }
 }
 
 .flex-wrapper {
     display: flex;
+    flex-direction: column;
 }
+
+.flex-wrapper-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profiel {
+    
+    font-size: clamp(20px, 25px, 35px);
+    animation: profiel 3s;
+}
+
 
 .opleiding .flex-wrapper {
     display: flex;
@@ -91,7 +117,9 @@ li {
  
 }
 
-:root * {
+
+
+body {
     /* Pause the animation */
     animation-play-state: paused;
     /* Bind the animation to scroll */
@@ -99,4 +127,33 @@ li {
     /* These last 2 properites clean up overshoot weirdness */
     animation-iteration-count: 1;
     animation-fill-mode: both;
+  }
+
+  #contact li {
+      margin: 0;
+  }
+
+  p {
+      max-width: 65ch;
+  }
+
+  .menu ul{
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+  }
+
+  .arrow {
+    font-size:35px;
+  }
+
+  .cv {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .contact {
+      font-size: 30px;
+      font-weight: 600;
+      text-decoration: none;
   }
