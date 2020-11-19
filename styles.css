@@ -1,17 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap');*/
 
-* {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700;800;900&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -27,7 +23,7 @@ body {
   }
   @keyframes body {
     to {
-      background-color: #98afdb;
+      background-color: #93a6ca;
     }
   }
 
@@ -68,7 +64,7 @@ li {
 }
 
 .header {
-    height: 75vh;
+    height: 74vh;
     margin-top: 5vh;
     font-size: 1.75em;
     padding: 0em 0.5em 0em 0.5em;
@@ -138,9 +134,9 @@ li {
 
 .email {
     text-decoration: none;
+    color: #23473b;
  
 }
-
 
 
 body {
@@ -165,7 +161,7 @@ body {
       display: flex;
       align-items: flex-start; 
       margin-left: 10vw;  
-      margin-bottom: 5px;
+      
      
   }
 
@@ -176,6 +172,7 @@ body {
   .cv {
     font-weight: 700;
     font-size: 40px;
+   
   }
 
   .contact {
@@ -199,8 +196,9 @@ body {
   }
 
   .footer { 
-    height: 50vh;
-    margin-top: 5vh;
+    height: 30vh;
+    margin: 5vh;
+    margin-bottom: 3em;
     font-size: 1.75em;
     padding: 0em 0.5em 0em 0.5em;
     display: flex;
@@ -211,9 +209,10 @@ body {
 
   @media only screen and (min-width: 850px) {
     .footer {
-        height: 50vh;
-        margin-top: 5vh;
-        padding: 0em 3em 0em 3em;
+        height: 30vh;
+        margin-top: 3vh;
+        
+        padding: 0em 2em 0em 3em;
         font-size: 3em;
         display: flex;
         flex-direction: column;
