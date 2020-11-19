@@ -20,14 +20,14 @@ html {
 body {
     margin: 0 10px 0 10px;
     min-height: 300vh;
-    background-color: #DDDDDD;
+    background-color: #a9b1c2;
     animation: body 1s linear;
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: #23473b;
   }
   @keyframes body {
     to {
-      background-color: #a8a4a4;
+      background-color: #98afdb;
     }
   }
 
@@ -42,50 +42,72 @@ h1 {
 
 h2 {
     margin: 0;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 600;
-    background-color: thistle;
+   
+    color: white;
 }
 
 h3 {
-    font-weight: 500;
+    margin: 0em 0em 0.3em 0em;
+    font-weight: 600;
+    font-size: 1em;
+
 }
 
 ul {
+    margin-top: 2em;
     list-style: none;  
-    font-size: clamp(.5em, 20px, 2em);
+    font-size: 18px;
     padding-left: 0;
 }
 
 li {
-    margin-bottom: .5em;
-    margin-right:   10px;
+    margin: 0em 10px .25em 0em;
+    font-size: 20px;
 }
 
-
-
 .header {
-    height: 70vh;
-    margin-top: 10vh;
-    font-size: 30px;
+    height: 75vh;
+    margin-top: 5vh;
+    font-size: 1.75em;
+    padding: 0em 0.5em 0em 0.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
 
+@media only screen and (min-width: 850px) {
+.header {
+    height: 75vh;
+    margin-top: 5vh;
     
+    padding: 0em 3em 0em 3em;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 }
 
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;   
+    padding-right: 0.5em;
 }
 
 @media only screen and (min-width: 850px) {
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    grid-column-gap: 5em; 
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    /*grid-template-columns: minmax(min-content, 75ch) min-content;*/
+    grid-column-gap: 3em; 
+    padding: 2em;
+  
 }
 }
 
@@ -96,7 +118,8 @@ li {
 
 .flex-wrapper-row {
     display: flex;
-    justify-content: space-between;
+    gap: 1.5em;
+   
 }
 
 .profiel {
@@ -109,6 +132,7 @@ li {
 .opleiding .flex-wrapper {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     
 }
 
@@ -139,21 +163,61 @@ body {
 
   .menu ul{
       display: flex;
-      align-items: baseline;
-      justify-content: space-around;
+      align-items: flex-start; 
+      margin-left: 10vw;  
+     
   }
 
   .arrow {
-    font-size:35px;
+    font-size:50px;
   }
 
   .cv {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .contact {
       font-size: 30px;
       font-weight: 600;
       text-decoration: none;
+      color: rgb(49, 42, 42);
   }
+
+  .werkervaring li {
+      margin-bottom: 2em;
+  }
+
+  .opleiding li {
+      margin-bottom: 2em;
+  }
+
+  .sectie {
+      margin: 3em 0em 3em 0em;
+ 
+  }
+
+  .footer { 
+    height: 50vh;
+    margin-top: 5vh;
+    font-size: 1.75em;
+    padding: 0em 0.5em 0em 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 850px) {
+    .footer {
+        height: 50vh;
+        margin-top: 5vh;
+        padding: 0em 3em 0em 3em;
+        font-size: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+
