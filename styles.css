@@ -90,7 +90,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
 }
 
 }
@@ -109,7 +109,7 @@ li {
     /*grid-template-columns: minmax(min-content, 75ch) min-content;*/
     grid-column-gap: 3em; 
     padding: 2em;
-    align-content: center;
+    
   
 }
 }
@@ -179,16 +179,17 @@ li {
   }
 
   .werkervaring li {
-      margin-bottom: 2em;
+      margin-bottom: 1.5em;
   }
 
   .opleiding li {
-      margin-bottom: 2em;
+      margin-bottom: 1.5em;
   }
 
   .sectie {
       margin: 3em 0em 3em 0em;
- 
+      display: flex;
+      flex-direction: column;
   }
 
   .footer { 
@@ -217,3 +218,5 @@ li {
     }
     }
 
+
+    }
